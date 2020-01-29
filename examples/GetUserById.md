@@ -8,7 +8,7 @@ tags:
 
 ## Query
 
-```sql
+```sql template
 SELECT
   `id`,
   `name`
@@ -20,7 +20,7 @@ WHERE `id` = @id;
 
 ### Input
 
-```yaml json-schema
+```yaml input-schema
 title: Input User Id for GetUserById
 type: object
 properties:
@@ -34,14 +34,14 @@ required:
 
 ### Output
 
-```yaml json-schema
+```yaml output-schema
 title: Output User Data for GetUserById
 type: object
 properties:
   id:
     description: User Id
     type: integer
-  id:
+  name:
     description: User Name
     type: string
 additionalProperties: false
