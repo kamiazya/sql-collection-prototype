@@ -6,10 +6,12 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build:app": "yarn project:app build",
-    "start": "ts-node src/index.ts",
+    "prestart": "yarn build:app",
+    "start": "ts-node src/main",
     "project:app": "yarn --cwd app"
   },
   "dependencies": {
+    "carlo": "^0.9.46",
     "hast-util-heading": "^1.0.3",
     "json-schema": "^0.2.5",
     "mdast-normalize-headings": "^1.0.2",
@@ -28,6 +30,7 @@
     "yaml": "^1.7.2"
   },
   "devDependencies": {
+    "@types/carlo": "^0.9.1",
     "@types/json-schema": "^7.0.4",
     "@types/node": "^13.1.7",
     "@types/yaml": "^1.2.0",
