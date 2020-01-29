@@ -32,6 +32,12 @@ required:
   - id
 ```
 
+#### Default
+
+```yaml
+id: 1
+```
+
 ### Output
 
 ```yaml output-schema

@@ -20,6 +20,21 @@ const Metadata: CustomNode = {
   getData: ({ data }: Node) => data
 };
 
+const Default: CustomNode = {
+  selector: ({ type, meta }: Node) => type === "code" && meta === "default",
+  getData: ({ lang, value }: Node) => {
+    switch (lang) {
+      case "json":
+        return JSON.parse(value as string);
+      case "yaml":
+      case "yml":
+        return YAML.parse(value as string);
+      default:
+        return value;
+    }
+  }
+};
+
 const SqlTemplate: CustomNode = {
   selector: ({ type, meta, lang }: Node) =>
     type === "code" && meta === "template" && lang === "sql",
@@ -71,6 +86,11 @@ export function parse<M = any>(filePath: string): parse.Result<M> {
         if (inputSchemaNode) {
           result.outputSchema = InputSchema.getData(inputSchemaNode);
         }
+        const defaultNode = find(tree, Default.selector);
+        if (defaultNode) {
+          result.default = Default.getData(defaultNode);
+
+        }
       };
     });
   const parsed = processor.parse(file);
@@ -81,6 +101,7 @@ export function parse<M = any>(filePath: string): parse.Result<M> {
 export namespace parse {
   export interface Result<M> {
     metadata?: M;
+    default?: any;
     sqlTemplate?: string;
     inputSchema?: JSONSchema7Definition;
     outputSchema?: JSONSchema7Definition;
