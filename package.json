@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "build": "tsc -p tsconfig.json",
+    "build:app": "yarn project:app build",
+    "start": "ts-node src/index.ts",
+    "project:app": "yarn --cwd app"
   },
   "dependencies": {
     "hast-util-heading": "^1.0.3",
