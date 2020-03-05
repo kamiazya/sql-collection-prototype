@@ -13,7 +13,7 @@ SELECT
   `id`,
   `name`
 FROM `users`
-WHERE `id` = @id;
+WHERE `id` = :id;
 ```
 
 ## Schema

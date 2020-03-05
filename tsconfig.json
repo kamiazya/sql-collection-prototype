@@ -6,6 +6,7 @@
     "strictNullChecks": true,
     "outDir": "lib",
     "rootDir": "src",
+    "jsx": "react",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
