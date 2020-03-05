@@ -1,4 +1,11 @@
 import { parse } from './parser';
+import { highlight } from "cli-highlight";
+
 const filePath = `${__dirname}/../examples/GetUserById.md`;
 
-console.log(parse(filePath));
+const result = parse(filePath);
+console.log(
+  highlight(result.sqlTemplate!, {
+    language: "sql"
+  })
+);

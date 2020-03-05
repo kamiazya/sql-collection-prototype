@@ -8,6 +8,7 @@
     "start": "ts-node src/main"
   },
   "dependencies": {
+    "cli-highlight": "^2.1.4",
     "hast-util-heading": "^1.0.3",
     "json-schema": "^0.2.5",
     "mdast-normalize-headings": "^1.0.2",
