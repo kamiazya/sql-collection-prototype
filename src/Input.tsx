@@ -11,7 +11,7 @@ export const Input: FC<Props> = ({ value, onSubmit }) => {
          const [text, setText] = useState(value);
          return (
            <Box>
-             <Box marginRight={1}>Enter your query:</Box>
+             <Box marginRight={1}>ID:</Box>
 
              <TextInput value={text} onChange={setText} onSubmit={onSubmit} />
            </Box>

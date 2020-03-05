@@ -1,9 +1,3 @@
----
-sideEffort: False
-tags:
-  - tag A
-  - tag B
----
 # GetUserById
 
 ## Query
