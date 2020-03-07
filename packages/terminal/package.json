@@ -1,18 +1,28 @@
 {
   "name": "@sql-collection-prototype/terminal",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "unpkg": "lib/bundle.min.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
   "dependencies": {
     "cli-highlight": "^2.1.4",
     "ink": "^2.7.1",
     "ink-table": "^2.0.1",
     "ink-text-input": "^3.2.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "react": "^16.13.0"
   },
   "devDependencies": {
     "@types/ink-table": "^1.0.1",
     "@types/mysql": "^2.15.9",
+    "rollup": "^2.0.2",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.26.0",
     "typescript": "^3.8.3"
   }
 }
