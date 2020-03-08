@@ -1,6 +1,6 @@
 {
   "name": "@sql-collection-prototype/terminal",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
   "unpkg": "lib/bundle.min.js",
@@ -10,6 +10,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
+    "@sql-collection-prototype/md-parser": "*",
     "cli-highlight": "^2.1.4",
     "ink": "^2.7.1",
     "ink-table": "^2.0.1",
