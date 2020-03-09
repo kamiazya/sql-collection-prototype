@@ -13,6 +13,7 @@
     "@sql-collection-prototype/md-parser": "*",
     "cli-highlight": "^2.1.4",
     "ink": "^2.7.1",
+    "ink-highlight": "^0.0.2",
     "ink-table": "^2.0.1",
     "ink-text-input": "^3.2.2",
     "mysql": "^2.18.1",

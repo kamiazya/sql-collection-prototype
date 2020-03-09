@@ -1,9 +1,8 @@
 import React, { FC, useState } from 'react';
 import { createConnection } from "mysql";
 import { parse } from "@sql-collection-prototype/md-parser";
-import { highlight } from "cli-highlight";
-import { Box } from "ink";
 import Table from "ink-table";
+import { Highlight } from "ink-highlight";
 import { Input } from "./Input";
 
 
@@ -36,11 +35,7 @@ export const App: FC<parse.Result<any>> = ({ sqlTemplate }) => {
   };
   return (
     <>
-      <Box>
-        {highlight(sqlTemplate!, {
-          language: "sql"
-        })}
-      </Box>
+      <Highlight code={sqlTemplate!} language="sql" />
       <Input value={"1"} onSubmit={onSubmit}></Input>
       {result ? <Table data={[result]} /> : <></>}
     </>
