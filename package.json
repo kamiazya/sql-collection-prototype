@@ -14,7 +14,7 @@
     "ink-table": "^2.0.1",
     "ink-text-input": "^3.2.2",
     "json-schema": "^0.2.5",
-    "mdast-normalize-headings": "^1.0.2",
+    "mdast-normalize-headings": "^2.0.0",
     "mdast-util-heading-range": "^2.1.3",
     "mysql": "^2.18.1",
     "react": "^16.13.0",
