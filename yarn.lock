@@ -370,10 +370,10 @@ has@^1.0.1:
   dependencies:
     function-bind "^1.1.1"
 
-hast-util-heading@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/hast-util-heading/-/hast-util-heading-1.0.3.tgz#94ca632b0582d6217e64d013e1d5f380b6856a88"
-  integrity sha512-RrZe5CFYZ5sdlWT6nt+I4cSPkFYPJjHzGLS7hWYld8SMAvzA97GgU42mvGguCJjOCNewx+XhMztg/qHYazcxqg==
+hast-util-heading@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hast-util-heading/-/hast-util-heading-1.0.4.tgz#39182cf88f053361a2ecc6e4035f5fe436ba042e"
+  integrity sha512-RUXN/gllxlbjmOch1ULpO7+yhCDZL3fwAfeqm8Wi/s5Cv7YuF7RsmnEjVy/gbN3j0eGf98ZTe5GxSguYE39+1Q==
   dependencies:
     hast-util-is-element "^1.0.0"
 

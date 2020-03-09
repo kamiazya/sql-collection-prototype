@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "cli-highlight": "^2.1.4",
-    "hast-util-heading": "^1.0.3",
+    "hast-util-heading": "^1.0.4",
     "ink": "^2.7.1",
     "ink-table": "^2.0.1",
     "ink-text-input": "^3.2.2",
