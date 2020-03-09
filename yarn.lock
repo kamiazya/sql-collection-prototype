@@ -866,10 +866,10 @@ remark-parse@^7.0.0, remark-parse@^7.0.2:
     vfile-location "^2.0.0"
     xtend "^4.0.1"
 
-remark-sectionize@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/remark-sectionize/-/remark-sectionize-1.1.0.tgz#80fbb2a431b0970aea99937de905f4968c724fb7"
-  integrity sha512-/oHor2Fjn5/BtO4QcoBYjRpohq2+IgjYXc5YmpKv5EEy2rDAUfNi04yFGIK2vApiYasSIG6g1e0DDM/0g7gRKw==
+remark-sectionize@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/remark-sectionize/-/remark-sectionize-1.1.1.tgz#68d5267938e2a83ecfa32c933913a2bb139d0dd3"
+  integrity sha512-++GBmbsoeQrMBWn6jf3mj0bRq3DR8LnQPJo7u5faQ9JAJ5GeAu2uve8NoW+vgvhnuAv0GYS8hGb2+kqa+8mnpg==
   dependencies:
     unist-util-find-after "^2.0.2"
     unist-util-visit-parents "^2.0.1"
