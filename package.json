@@ -29,7 +29,7 @@
     "unist-builder": "^2.0.2",
     "unist-util-find": "^1.0.1",
     "unist-util-inspect": "^5.0.0",
-    "yaml": "^1.7.2"
+    "yaml": "^1.8.0"
   },
   "devDependencies": {
     "@types/ink-table": "^1.0.1",
