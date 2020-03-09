@@ -35,7 +35,7 @@
     "@types/ink-table": "^1.0.1",
     "@types/json-schema": "^7.0.4",
     "@types/mysql": "^2.15.9",
-    "@types/node": "^13.1.7",
+    "@types/node": "^13.9.0",
     "@types/react": "^16.9.23",
     "@types/yaml": "^1.2.0",
     "remark-parse": "^7.0.2",
