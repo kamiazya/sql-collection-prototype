@@ -1226,10 +1226,10 @@ unist-util-find@^1.0.1:
     remark "^5.0.1"
     unist-util-visit "^1.1.0"
 
-unist-util-inspect@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/unist-util-inspect/-/unist-util-inspect-5.0.0.tgz#a39f95e9bfbf1573829cc000653396d65ca1b932"
-  integrity sha512-gsw+mcgsyfV5DjSXARb9lPziDUZGhB2OE6Z8hfmJ3HIL+fUdBhYS8r8ByD8NN6/7aZyCEDa4M+n0Rn5SPPu9Gw==
+unist-util-inspect@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/unist-util-inspect/-/unist-util-inspect-5.0.1.tgz#168c8770a99902318ca268f8c391e294bcf44540"
+  integrity sha512-fPNWewS593JSmg49HbnE86BJKuBi1/nMWhDSccBvbARfxezEuJV85EaARR9/VplveiwCoLm2kWq+DhP8TBaDpw==
   dependencies:
     is-empty "^1.0.0"
 
