@@ -1860,10 +1860,10 @@ ini@~1.3.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
-ink-highlight@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/ink-highlight/-/ink-highlight-0.0.2.tgz#9af701f68b08f4c9c6c3860c671f18bbaacc0af4"
-  integrity sha512-xFGM0OVPAa6a71Z8rIpLDquORK0PaZV1ePsMYc7D1T0m1w11VncK0WTueX7ouqIzLVQkyV6aZHpLOpFi7u/jVw==
+ink-highlight@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ink-highlight/-/ink-highlight-0.1.0.tgz#85bb1e6370deda99492b913a89cf005fd00a05a8"
+  integrity sha512-I0l3uINj7rMZWa5hIBxMvUHAhDCpsgg7GXKu/8K250TyeZyKkxczUOiRnvi1aU5ms0QpReiO0fcLUBCW0/GbOg==
   dependencies:
     cli-highlight "^2.1.4"
     prop-types "^15.7.2"
