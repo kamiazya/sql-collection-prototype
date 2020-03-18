@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "CommonJS",
+    "target": "ESNext",
+    "module": "ESNext",
     "strict": true,
     "strictNullChecks": true,
-    "outDir": "lib",
-    "rootDir": "src",
-    "jsx": "react",
     "moduleResolution": "Node",
     "esModuleInterop": true,
+    "declaration": true,
+    "importHelpers": true,
     "forceConsistentCasingInFileNames": true
   }
 }

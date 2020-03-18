@@ -1,12 +1,10 @@
 import React, { FC, useState } from 'react';
 import { createConnection } from "mysql";
-import { parse } from "./parser";
-import { highlight } from "cli-highlight";
-import { render, Box } from "ink";
+import { parse } from "@sql-collection-prototype/md-parser";
 import Table from "ink-table";
+import { Highlight } from "ink-highlight";
 import { Input } from "./Input";
 
-const filePath = `${__dirname}/../examples/GetUserById.md`;
 
 const connection = createConnection({
   host: "localhost",
@@ -28,7 +26,7 @@ connection.config.queryFormat = function (query: string, values: any) {
 
 
 
-const Demo: FC<parse.Result<any>> = ({ sqlTemplate }) => {
+export const App: FC<parse.Result<any>> = ({ sqlTemplate }) => {
   const [result, setResult] = useState();
   const onSubmit = (value: string) => {
     connection.query(sqlTemplate!, { id: value }).on('result', (row) => {
@@ -37,17 +35,9 @@ const Demo: FC<parse.Result<any>> = ({ sqlTemplate }) => {
   };
   return (
     <>
-      <Box>
-        {highlight(sqlTemplate!, {
-          language: "sql"
-        })}
-      </Box>
+      <Highlight code={sqlTemplate!} language="sql" />
       <Input value={"1"} onSubmit={onSubmit}></Input>
       {result ? <Table data={[result]} /> : <></>}
     </>
   );
 };
-
-
-const result = parse(filePath);
-render(<Demo {...result}/>, process.stdout);

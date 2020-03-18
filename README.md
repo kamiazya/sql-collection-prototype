@@ -11,7 +11,7 @@ See [GetUserById.md](examples/GetUserById.md).
 
 ## Example
 
-1. Run script by `yarn start`.
+1. Run script by `yarn cli cui examples/GetUserById.md`.
   ![cli](./media/cli.png)
 2. Press Enter.
 3. The result is output.

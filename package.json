@@ -3,44 +3,14 @@
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "ts-node src/main"
-  },
-  "dependencies": {
-    "cli-highlight": "^2.1.4",
-    "hast-util-heading": "^1.0.3",
-    "ink": "^2.7.1",
-    "ink-table": "^2.0.1",
-    "ink-text-input": "^3.2.2",
-    "json-schema": "^0.2.5",
-    "mdast-normalize-headings": "^1.0.2",
-    "mdast-util-heading-range": "^2.1.3",
-    "mysql": "^2.18.1",
-    "react": "^16.13.0",
-    "remark": "^11.0.2",
-    "remark-behead": "^2.3.1",
-    "remark-frontmatter": "^1.3.2",
-    "remark-meta": "^0.2.0",
-    "remark-metadata": "^0.2.1",
-    "remark-parse-yaml": "^0.0.3",
-    "remark-sectionize": "^1.1.0",
-    "remark-stringify": "^7.0.4",
-    "unist-builder": "^2.0.2",
-    "unist-util-find": "^1.0.1",
-    "unist-util-inspect": "^5.0.0",
-    "yaml": "^1.7.2"
+    "cli": "packages/cli/bin/run"
   },
   "devDependencies": {
-    "@types/ink-table": "^1.0.1",
-    "@types/json-schema": "^7.0.4",
-    "@types/mysql": "^2.15.9",
-    "@types/node": "^13.1.7",
-    "@types/react": "^16.9.23",
-    "@types/yaml": "^1.2.0",
-    "remark-parse": "^7.0.2",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.4",
-    "unified": "^8.4.2"
+    "oclif": "^1.15.2"
   }
 }
