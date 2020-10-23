@@ -17,7 +17,7 @@
     "ink-table": "^2.0.1",
     "ink-text-input": "^3.2.2",
     "mysql": "^2.18.1",
-    "react": "^16.13.0"
+    "react": "^17.0.1"
   },
   "devDependencies": {
     "@types/ink-table": "^1.0.1",
